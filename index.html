@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lzh题库</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <div class="box" id="app" style=" text-align: center;">
+
+        <h1>lzh题库</h1>
+        <button type="button" @click="Cleartitle(qk)"> {{buttondemo}}</button>
+        <input type="text" v-model="subject" @click="clsprop(qk)" @keyup.enter="joker" style="width: 500px;">
+        <button type="button" @click="joker">搜索</button>
+        <p> {{answer}}</p>
+        <span v-if="okyeah" @click="isok">有回车事件，没必要点搜索，点击这里隐藏</span>
+
+
+    </div>
+</body>
+
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {
+            subject: '计算机的特点是（ ）。',
+            answer: '',
+            okyeah: true,
+            qk: true,
+            buttondemo: '开启点击清空'
+        },
+        methods: {
+            joker: function () {
+                let that = this;
+                if (that.subject == '') {
+                    alert("不输入搜索？!");
+                }
+                // const service = axios.create({
+                //     headers: {
+                //         'Authorization':'************************************************', //	可以是授权凭证用的参数值
+                //         'Content-Type':'application/json'
+                //     }
+                // });
+                axios.get('https://study.jszkk.com/api/open/seek?q=' + that.subject)
+                    .then(function (response) {
+                        if (response.data.code != 200) {
+                            that.answer = response.data.msg;
+                        } else {
+                            that.answer = response.data.data.answer;
+                        }
+                    })
+            },
+            isok: function () {
+                let that = this;
+                that.okyeah = false
+            },
+            Cleartitle: function (qk) {
+
+                let that = this;
+                if (qk) {
+                    that.qk = false;
+                    that.buttondemo = "关闭点击清空";
+                } else {
+                    that.qk = true;
+                    that.buttondemo = "开启点击清空";
+                }
+            },
+            clsprop: function (qk) {
+                let that = this;
+                if (qk) {
+                    that.subject = '';
+                }
+            }
+        }
+    })
+</script>
+
+</html>
