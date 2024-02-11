@@ -29,6 +29,12 @@ proxies:
   - {name: "☁️ CFWarp-J",type: wireguard,server: 188.114.96.1610,port: 10020,ip: 172.16.0.2,private-key: SHVqHEGI7k2+OQ/oWMmWY2EQObbRQjRBdDPimh0h1WY=,public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=,remote-dns-resolve: false,udp: true}
   - {name: "☁️ CFWarp-K",type: wireguard,server: 188.114.96.1611,port: 10021,ip: 172.16.0.2,private-key: SHVqHEGI7k2+OQ/oWMmWY2EQObbRQjRBdDPimh0h1WY=,public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=,remote-dns-resolve: false,udp: true}
   - {name: "☁️ CFWarp-L",type: wireguard,server: 188.114.96.1612,port: 10022,ip: 172.16.0.2,private-key: SHVqHEGI7k2+OQ/oWMmWY2EQObbRQjRBdDPimh0h1WY=,public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=,remote-dns-resolve: false,udp: true}
+  - {name: "🌍 自建vless1", server: cdn.lzhn.link, port: 443, type: vless, uuid: b80c29a3-ca58-4d3f-b3f1-b562ed33cc5b, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /?ed=2048, headers: {Host: cdn.lzhn.link}}, udp: true}
+  - {name: "🌍 自建vless2", server: bestcf.onecf.eu.org, port: 443, type: vless, uuid: b80c29a3-ca58-4d3f-b3f1-b562ed33cc5b, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /?ed=2048, headers: {Host: cdn.lzhn.link}}, udp: true}
+  - {name: "🌍 自建vless3", server: bestproxy.onecf.eu.org, port: 443, type: vless, uuid: b80c29a3-ca58-4d3f-b3f1-b562ed33cc5b, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /?ed=2048, headers: {Host: cdn.lzhn.link}}, udp: true}
+  - {name: "🌍 自建vless4", server: my-telegram-is-herocore.onecf.eu.org, port: 443, type: vless, uuid: b80c29a3-ca58-4d3f-b3f1-b562ed33cc5b, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /?ed=2048, headers: {Host: cdn.lzhn.link}}, udp: true}
+  - {name: "🌍 自建vless5", server: jp02.nttkk.com, port: 443, type: vless, uuid: b80c29a3-ca58-4d3f-b3f1-b562ed33cc5b, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /?ed=2048, headers: {Host: cdn.lzhn.link}}, udp: true}
+  - {name: "🌍 自建vless6", server: cf2.3666888.xyz, port: 443, type: vless, uuid: b80c29a3-ca58-4d3f-b3f1-b562ed33cc5b, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /?ed=2048, headers: {Host: cdn.lzhn.link}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -46,6 +52,12 @@ proxy-groups:
       - ☁️ CFWarp-J
       - ☁️ CFWarp-K
       - ☁️ CFWarp-L
+      - 🌍 自建vless1
+      - 🌍 自建vless2
+      - 🌍 自建vless3
+      - 🌍 自建vless4
+      - 🌍 自建vless5
+      - 🌍 自建vless6
       - DIRECT
   - name: ♻️ 自动选择
     type: url-test
@@ -65,6 +77,12 @@ proxy-groups:
       - ☁️ CFWarp-J
       - ☁️ CFWarp-K
       - ☁️ CFWarp-L
+      - 🌍 自建vless1
+      - 🌍 自建vless2
+      - 🌍 自建vless3
+      - 🌍 自建vless4
+      - 🌍 自建vless5
+      - 🌍 自建vless6
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -82,6 +100,12 @@ proxy-groups:
       - ☁️ CFWarp-J
       - ☁️ CFWarp-K
       - ☁️ CFWarp-L
+      - 🌍 自建vless1
+      - 🌍 自建vless2
+      - 🌍 自建vless3
+      - 🌍 自建vless4
+      - 🌍 自建vless5
+      - 🌍 自建vless6
   - name: 📲 电报信息
     type: select
     proxies:
@@ -99,6 +123,12 @@ proxy-groups:
       - ☁️ CFWarp-J
       - ☁️ CFWarp-K
       - ☁️ CFWarp-L
+      - 🌍 自建vless1
+      - 🌍 自建vless2
+      - 🌍 自建vless3
+      - 🌍 自建vless4
+      - 🌍 自建vless5
+      - 🌍 自建vless6
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -141,6 +171,12 @@ proxy-groups:
       - ☁️ CFWarp-J
       - ☁️ CFWarp-K
       - ☁️ CFWarp-L
+      - 🌍 自建vless1
+      - 🌍 自建vless2
+      - 🌍 自建vless3
+      - 🌍 自建vless4
+      - 🌍 自建vless5
+      - 🌍 自建vless6
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
