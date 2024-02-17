@@ -95,6 +95,18 @@ proxies:
   - {"name":"jp.anxray.top","type":"vless","server":"jp.anxray.top","port":443,"uuid":"b80c29a3-ca58-4d3f-b3f1-b562ed33cc5b","tls":true,"servername":"cdn.lzhn.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cdn.lzhn.link"}},"client-fingerprint":"randomized"}
   - {"name":"qq.achen.link","type":"vless","server":"qq.achen.link","port":443,"uuid":"b80c29a3-ca58-4d3f-b3f1-b562ed33cc5b","tls":true,"servername":"cdn.lzhn.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cdn.lzhn.link"}},"client-fingerprint":"randomized"}
   - {"name":"acjp2.cloudflarest.link","type":"vless","server":"acjp2.cloudflarest.link","port":443,"uuid":"b80c29a3-ca58-4d3f-b3f1-b562ed33cc5b","tls":true,"servername":"cdn.lzhn.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cdn.lzhn.link"}},"client-fingerprint":"randomized"}
+  - {"name":"北美1","type":"vless","104.27.83.122","port":2086,"uuid":"7be1263c-6eef-441e-905f-500f01ef42fc","tls":true,"servername":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev"}},"client-fingerprint":"randomized"} 
+  - {"name":"北美2","type":"vless","104.25.234.179","port":80,"uuid":"7be1263c-6eef-441e-905f-500f01ef42fc","tls":true,"servername":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev"}},"client-fingerprint":"randomized"} 
+  - {"name":"北美3","type":"vless","104.20.9.13","port":2095,"uuid":"7be1263c-6eef-441e-905f-500f01ef42fc","tls":true,"servername":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev"}},"client-fingerprint":"randomized"} 
+  - {"name":"北美4","type":"vless","104.25.239.33","port":2082,"uuid":"7be1263c-6eef-441e-905f-500f01ef42fc","tls":true,"servername":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev"}},"client-fingerprint":"randomized"} 
+  - {"name":"北美5","type":"vless","104.27.82.105","port":2052,"uuid":"7be1263c-6eef-441e-905f-500f01ef42fc","tls":true,"servername":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev"}},"client-fingerprint":"randomized"} 
+  - {"name":"北美6","type":"vless","104.19.242.145","port":8880,"uuid":"7be1263c-6eef-441e-905f-500f01ef42fc","tls":true,"servername":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev"}},"client-fingerprint":"randomized"} 
+  - {"name":"北美7","type":"vless","104.22.31.232","port":8880,"uuid":"7be1263c-6eef-441e-905f-500f01ef42fc","tls":true,"servername":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev"}},"client-fingerprint":"randomized"} 
+  - {"name":"北美8","type":"vless","104.19.237.6","port":80,"uuid":"7be1263c-6eef-441e-905f-500f01ef42fc","tls":true,"servername":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev"}},"client-fingerprint":"randomized"} 
+  - {"name":"北美9","type":"vless","104.19.232.4","port":8080,"uuid":"7be1263c-6eef-441e-905f-500f01ef42fc","tls":true,"servername":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev"}},"client-fingerprint":"randomized"} 
+  - {"name":"北美10","type":"vless","104.19.245.250","port":80,"uuid":"7be1263c-6eef-441e-905f-500f01ef42fc","tls":true,"servername":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev"}},"client-fingerprint":"randomized"}
+
+  
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -110,6 +122,16 @@ proxy-groups:
       - jp.anxray.top
       - qq.achen.link
       - acjp2.cloudflarest.link
+      - 北美1
+      - 北美2
+      - 北美3
+      - 北美4
+      - 北美5
+      - 北美6
+      - 北美7
+      - 北美8
+      - 北美9
+      - 北美10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -125,6 +147,16 @@ proxy-groups:
       - jp.anxray.top
       - qq.achen.link
       - acjp2.cloudflarest.link
+      - 北美1
+      - 北美2
+      - 北美3
+      - 北美4
+      - 北美5
+      - 北美6
+      - 北美7
+      - 北美8
+      - 北美9
+      - 北美10
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -140,6 +172,16 @@ proxy-groups:
       - jp.anxray.top
       - qq.achen.link
       - acjp2.cloudflarest.link
+      - 北美1
+      - 北美2
+      - 北美3
+      - 北美4
+      - 北美5
+      - 北美6
+      - 北美7
+      - 北美8
+      - 北美9
+      - 北美10
   - name: 📲 电报信息
     type: select
     proxies:
@@ -154,6 +196,16 @@ proxy-groups:
       - jp.anxray.top
       - qq.achen.link
       - acjp2.cloudflarest.link
+      - 北美1
+      - 北美2
+      - 北美3
+      - 北美4
+      - 北美5
+      - 北美6
+      - 北美7
+      - 北美8
+      - 北美9
+      - 北美10
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -168,6 +220,16 @@ proxy-groups:
       - jp.anxray.top
       - qq.achen.link
       - acjp2.cloudflarest.link
+      - 北美1
+      - 北美2
+      - 北美3
+      - 北美4
+      - 北美5
+      - 北美6
+      - 北美7
+      - 北美8
+      - 北美9
+      - 北美10
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -182,6 +244,16 @@ proxy-groups:
       - jp.anxray.top
       - qq.achen.link
       - acjp2.cloudflarest.link
+      - 北美1
+      - 北美2
+      - 北美3
+      - 北美4
+      - 北美5
+      - 北美6
+      - 北美7
+      - 北美8
+      - 北美9
+      - 北美10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -213,6 +285,16 @@ proxy-groups:
       - jp.anxray.top
       - qq.achen.link
       - acjp2.cloudflarest.link
+      - 北美1
+      - 北美2
+      - 北美3
+      - 北美4
+      - 北美5
+      - 北美6
+      - 北美7
+      - 北美8
+      - 北美9
+      - 北美10
 
 rules:
 # 本地/局域网地址
