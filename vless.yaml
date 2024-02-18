@@ -105,6 +105,7 @@ proxies:
   - {"name":"北美8","type":"vless","server":"104.19.237.6","port":80,"uuid":"7be1263c-6eef-441e-905f-500f01ef42fc","tls":false,"servername":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev"}},"client-fingerprint":"randomized"} 
   - {"name":"北美9","type":"vless","server":"104.19.232.4","port":8080,"uuid":"7be1263c-6eef-441e-905f-500f01ef42fc","tls":false,"servername":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev"}},"client-fingerprint":"randomized"} 
   - {"name":"北美10","type":"vless","server":"104.19.245.250","port":80,"uuid":"7be1263c-6eef-441e-905f-500f01ef42fc","tls":false,"servername":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev"}},"client-fingerprint":"randomized"}
+  - {"name":"LZH","type":"vless","server":"cdn.zha.rr.nu","port":80,"uuid":"7be1263c-6eef-441e-905f-500f01ef42fc","tls":false,"servername":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hello-world-fragrant-butterfly-885c.jidyjjukys.workers.dev"}},"client-fingerprint":"randomized"}
 
 
   
@@ -133,6 +134,7 @@ proxy-groups:
       - 北美8
       - 北美9
       - 北美10
+      - LZH
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -158,6 +160,7 @@ proxy-groups:
       - 北美8
       - 北美9
       - 北美10
+      - LZH
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -183,6 +186,7 @@ proxy-groups:
       - 北美8
       - 北美9
       - 北美10
+      - LZH
   - name: 📲 电报信息
     type: select
     proxies:
@@ -207,6 +211,7 @@ proxy-groups:
       - 北美8
       - 北美9
       - 北美10
+      - LZH
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -231,6 +236,7 @@ proxy-groups:
       - 北美8
       - 北美9
       - 北美10
+      - LZH
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -255,6 +261,7 @@ proxy-groups:
       - 北美8
       - 北美9
       - 北美10
+      - LZH
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -296,6 +303,7 @@ proxy-groups:
       - 北美8
       - 北美9
       - 北美10
+      - LZH
 
 rules:
 # 本地/局域网地址
