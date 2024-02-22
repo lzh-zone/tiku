@@ -135,32 +135,31 @@ proxies:
   - {name: "🌍 自建vless8", server: 104.16.33.188, port: 443, type: vless, uuid: b80c29a3-ca58-4d3f-b3f1-b562ed33cc5b, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /?ed=2048, headers: {Host: cdn.lzhn.link}}, udp: true}
   - {name: "🌍 自建vless9", server: 104.26.7.228, port: 443, type: vless, uuid: b80c29a3-ca58-4d3f-b3f1-b562ed33cc5b, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /?ed=2048, headers: {Host: cdn.lzhn.link}}, udp: true}
 
-
 proxy-groups:
-  - name: 🌐 节点选择
-    type: select
-    proxies:
-    - 💡 自动选择
-    - ☁️ CFWarp-A
-    - ☁️ CFWarp-B
-    - ☁️ CFWarp-C
-    - ☁️ CFWarp-D
-    - ☁️ CFWarp-E
-    - ☁️ CFWarp-F
-    - ☁️ CFWarp-G
-    - ☁️ CFWarp-H
-    - ☁️ CFWarp-I
-    - ☁️ CFWarp-K
-    - ☁️ CFWarp-L
-    - 🌍 自建vless1
-    - 🌍 自建vless2
-    - 🌍 自建vless3
-    - 🌍 自建vless4
-    - 🌍 自建vless5
-    - 🌍 自建vless6
-    - 🌍 自建vless7
-    - 🌍 自建vless8
-    - 🌍 自建vless9
+- name: 🌐 节点选择
+  proxies:
+  - 💡 自动选择
+  - ☁️ CFWarp-A
+  - ☁️ CFWarp-B
+  - ☁️ CFWarp-C
+  - ☁️ CFWarp-D
+  - ☁️ CFWarp-E
+  - ☁️ CFWarp-F
+  - ☁️ CFWarp-G
+  - ☁️ CFWarp-H
+  - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
+  - ☁️ CFWarp-K
+  - ☁️ CFWarp-L
+  - 🌍 自建vless1
+  - 🌍 自建vless2
+  - 🌍 自建vless3
+  - 🌍 自建vless4
+  - 🌍 自建vless5
+  - 🌍 自建vless6
+  - 🌍 自建vless7
+  - 🌍 自建vless8
+  - 🌍 自建vless9
   type: select
 - interval: 300
   name: 💡 自动选择
@@ -174,6 +173,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -201,6 +201,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -227,6 +228,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -253,6 +255,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -279,6 +282,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -305,6 +309,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -331,6 +336,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -357,6 +363,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -383,6 +390,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -409,6 +417,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -435,6 +444,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -461,6 +471,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -487,6 +498,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -513,6 +525,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -539,6 +552,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -565,6 +579,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -591,6 +606,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -617,6 +633,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -643,6 +660,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -669,6 +687,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -695,6 +714,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -721,6 +741,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -747,6 +768,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -773,6 +795,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -797,6 +820,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -822,6 +846,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
@@ -847,6 +872,7 @@ proxy-groups:
   - ☁️ CFWarp-G
   - ☁️ CFWarp-H
   - ☁️ CFWarp-I
+  - ☁️ CFWarp-J
   - ☁️ CFWarp-K
   - ☁️ CFWarp-L
   - 🌍 自建vless1
